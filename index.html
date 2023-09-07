@@ -1,10 +1,66 @@
-i<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+<head>
+    <meta charset="UTF-8">
+    <title>웹사이트 목차와 본문</title>
+    <style>
+        /* 스타일을 여기에 추가하세요. */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            display: flex;
+        }
+
+        #sidebar {
+            flex: 1;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        #content {
+            flex: 3;
+            padding: 20px;
+        }
+
+        /* 목차 스타일을 추가하세요. */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
 <body>
-
-<h1>My First Heading</h1>
-
-<p>My first paragraph.</p>
-
+    <div id="container">
+        <div id="sidebar">
+            <h2>목차</h2>
+            <ul>
+                <li><a href="#section1">섹션 1</a></li>
+                <li><a href="#section2">섹션 2</a></li>
+                <!-- 원하는 목차 항목을 추가하세요. -->
+            </ul>
+        </div>
+        <div id="content">
+            <h1 id="section1">섹션 1 제목</h1>
+            <p>섹션 1 내용을 여기에 추가하세요.</p>
+            
+            <h1 id="section2">섹션 2 제목</h1>
+            <p>섹션 2 내용을 여기에 추가하세요.</p>
+            <!-- 원하는 섹션과 내용을 추가하세요. -->
+        </div>
+    </div>
 </body>
 </html>
