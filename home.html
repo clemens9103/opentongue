@@ -1,66 +1,1127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>웹사이트 목차와 본문</title>
-    <style>
-        /* 스타일을 여기에 추가하세요. */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+    <!-- Title -->
+    <title>Studio AR</title>
 
-        #container {
-            display: flex;
-        }
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-        #sidebar {
-            flex: 1;
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-        }
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/icon.ico">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C500%2C600%2C700%7CPlayfair+Display%7CRoboto%7CRaleway%7CSpectral%7CRubik">
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/bootstrap.min.css">
+    <!-- CSS Global Icons -->
+    <link rel="stylesheet" href="./assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/vendor/icon-line/css/simple-line-icons.css">
+    <link rel="stylesheet" href="./assets/vendor/icon-etlinefont/style.css">
+    <link rel="stylesheet" href="./assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="./assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="./assets/vendor/dzsparallaxer/dzsparallaxer.css">
+    <link rel="stylesheet" href="./assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+    <link rel="stylesheet" href="./assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+    <link rel="stylesheet" href="./assets/vendor/hs-bg-video/hs-bg-video.css">
+    <link rel="stylesheet" href="./assets/vendor/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="./assets/vendor/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="./assets/vendor/animate.css">
+    <link rel="stylesheet" href="./assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="./assets/vendor/hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" href="./assets/vendor/custombox/custombox.min.css">
 
-        #content {
-            flex: 3;
-            padding: 20px;
-        }
+    <!-- CSS Unify -->
+    <link rel="stylesheet" href="./assets/css/unify-core.css">
+    <link rel="stylesheet" href="./assets/css/unify-components.css">
+    <link rel="stylesheet" href="./assets/css/unify-globals.css">
 
-        /* 목차 스타일을 추가하세요. */
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        a {
-            color: #cc30a5;
-            text-decoration: none;
-        }
-    </style>
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="./assets/css/custom.css">
 </head>
+
 <body>
-    <div id="container">
-        <div id="sidebar">
-            <h2>목차</h2>
-            <ul>
-                <li><a href="#section1">Kristall의 섹션 1</a></li>
-                <li><a href="#section2">Kristall의 섹션 2</a></li>
-                <!-- 원하는 목차 항목을 추가하세요. -->
-            </ul>
+    <main>
+
+
+
+        <!-- Header -->
+        <header id="js-header" class="u-header u-header--static">
+            <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10">
+                <nav class="js-mega-menu navbar navbar-expand-lg hs-menu-initialized hs-menu-horizontal">
+                    <div class="container">
+                        <!-- Responsive Toggle Button -->
+                        <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-minus-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                            <span class="hamburger hamburger--slider">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                            </span>
+                            </span>
+                        </button>
+                        <!-- End Responsive Toggle Button -->
+
+                        <!-- Logo -->
+                        <a href="/" class="navbar-brand d-flex">
+                            <img class="img-fluid w-75" src="./assets/img/logo/logo_20.png" alt="Logo">
+                            <!--
+                            <svg width="86px" height="32px" viewBox="0 0 86 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g transform="translate(-78.000000, -19.000000)">
+                                        <g transform="translate(78.000000, 19.000000)">
+                                            <path class="g-fill-primary" d="M0,0 L19.2941176,0 L19.2941176,0 C23.7123956,-8.11624501e-16 27.2941176,3.581722 27.2941176,8 L27.2941176,27.2941176 L8,27.2941176 L8,27.2941176 C3.581722,27.2941176 5.41083001e-16,23.7123956 0,19.2941176 L0,0 Z"></path>
+                                            <path class="g-fill-white" d="M21.036662,24.8752523 L20.5338647,22.6659916 L20.3510293,22.6659916 C19.8533083,23.4481246 19.1448284,24.0626484 18.2255681,24.5095816 C17.3063079,24.9565147 16.2575544,25.1799779 15.0792761,25.1799779 C13.0376043,25.1799779 11.5139914,24.672107 10.5083918,23.6563498 C9.50279224,22.6405927 9,21.1017437 9,19.0397567 L9,8.02392554 L12.6109986,8.02392554 L12.6109986,18.4150692 C12.6109986,19.7050808 12.8750915,20.6725749 13.4032852,21.3175807 C13.9314789,21.9625865 14.7593086,22.2850846 15.886799,22.2850846 C17.3901196,22.2850846 18.4947389,21.8356188 19.2006901,20.9366737 C19.9066413,20.0377286 20.2596117,18.5318912 20.2596117,16.4191164 L20.2596117,8.02392554 L23.855374,8.02392554 L23.855374,24.8752523 L21.036662,24.8752523 Z"></path>
+                                            <path class="g-fill-main" d="M44.4764678,24.4705882 L40.8807055,24.4705882 L40.8807055,14.1099172 C40.8807055,12.809748 40.6191519,11.8397145 40.096037,11.1997875 C39.5729221,10.5598605 38.7425531,10.2399018 37.6049051,10.2399018 C36.0914269,10.2399018 34.9842682,10.6868282 34.2833958,11.5806945 C33.5825234,12.4745608 33.2320924,13.9727801 33.2320924,16.0753974 L33.2320924,24.4705882 L29.6515664,24.4705882 L29.6515664,7.61926145 L32.4550421,7.61926145 L32.9578394,9.8285222 L33.1406747,9.8285222 C33.6485533,9.02607405 34.3697301,8.40647149 35.3042266,7.96969592 C36.2387232,7.53292034 37.27478,7.31453583 38.412428,7.31453583 C42.4551414,7.31453583 44.4764678,9.3714132 44.4764678,13.4852296 L44.4764678,24.4705882 Z M53.7357283,24.4705882 L50.1552023,24.4705882 L50.1552023,7.61926145 L53.7357283,7.61926145 L53.7357283,24.4705882 Z M49.9418944,3.15503112 C49.9418944,2.51510412 50.1171098,2.0224693 50.467546,1.67711187 C50.8179823,1.33175444 51.3182351,1.15907831 51.9683197,1.15907831 C52.5980892,1.15907831 53.0881846,1.33175444 53.4386208,1.67711187 C53.7890571,2.0224693 53.9642725,2.51510412 53.9642725,3.15503112 C53.9642725,3.76448541 53.7890571,4.24442346 53.4386208,4.59485968 C53.0881846,4.94529589 52.5980892,5.12051137 51.9683197,5.12051137 C51.3182351,5.12051137 50.8179823,4.94529589 50.467546,4.59485968 C50.1171098,4.24442346 49.9418944,3.76448541 49.9418944,3.15503112 Z M68.0077253,10.3313195 L63.8939294,10.3313195 L63.8939294,24.4705882 L60.2981671,24.4705882 L60.2981671,10.3313195 L57.525164,10.3313195 L57.525164,8.65532856 L60.2981671,7.55831633 L60.2981671,6.4613041 C60.2981671,4.47042009 60.7654084,2.99505497 61.699905,2.03516447 C62.6344015,1.07527397 64.0615189,0.595335915 65.9812999,0.595335915 C67.2408388,0.595335915 68.4800439,0.803563007 69.6989525,1.22002344 L68.7543031,3.93208145 C67.8705943,3.64766945 67.0275286,3.50546559 66.2250804,3.50546559 C65.4124747,3.50546559 64.820805,3.75686171 64.4500537,4.25966149 C64.0793023,4.76246128 63.8939294,5.51664965 63.8939294,6.52224922 L63.8939294,7.61926145 L68.0077253,7.61926145 L68.0077253,10.3313195 Z M69.0089215,7.61926145 L72.9094094,7.61926145 L76.3375727,17.1724096 C76.8556088,18.5335242 77.2009611,19.813359 77.3736398,21.0119524 L77.49553,21.0119524 C77.5869482,20.453286 77.7545456,19.7752783 77.9983273,18.9779089 C78.242109,18.1805396 79.5321012,14.3943616 81.8683427,7.61926145 L85.738358,7.61926145 L78.5315971,26.7103215 C77.2212704,30.2146837 75.0374253,31.9668385 71.9799963,31.9668385 C71.1877057,31.9668385 70.4157419,31.8805004 69.6640816,31.7078217 L69.6640816,28.8738734 C70.2024329,28.9957643 70.8169567,29.0567088 71.5076716,29.0567088 C73.2344587,29.0567088 74.4482703,28.056203 75.1491427,26.0551615 L75.7738303,24.4705882 L69.0089215,7.61926145 Z"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                            -->
+                        </a>
+                        <!-- End Logo -->
+
+                        <!-- Navigation -->
+                        <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg g-mr-40--lg" id="navBar">
+                            <ul class="navbar-nav text-uppercase g-pos-rel g-font-weight-600 ml-auto">
+                                <!-- Start MENU -->
+                                <li class="nav-item g-mx-10--lg g-mx-15--xl">
+                                    <a href="#INTRO" class="nav-link g-py-7 g-px-0">INTRO</a>
+                                </li>
+                                <li class="nav-item g-mx-10--lg g-mx-15--xl">
+                                    <a href="#SERVICE" class="nav-link g-py-7 g-px-0">FEATURES</a>
+                                </li>
+                                <li class="nav-item g-mx-10--lg g-mx-15--xl">
+                                    <a href="#WHY?" class="nav-link g-py-7 g-px-0">WHY</a>
+                                </li>
+                                <li class="nav-item g-mx-10--lg g-mx-15--xl">
+                                    <a href="#PEOPLE" class="nav-link g-py-7 g-px-0">PEOPLE</a>
+                                </li>
+                                <!--
+                                <li class="nav-item g-mx-10--lg g-mx-15--xl">
+                                    <a href="#PLAN" class="nav-link g-py-7 g-px-0">PLAN</a>
+                                </li>
+                                -->
+                                <li class="nav-item g-mx-10--lg g-mx-15--xl">
+                                    <a href="#CONTACT" class="nav-link g-py-7 g-px-0">CONTACT</a>
+                                </li>
+                                <!-- End MENU -->
+                            </ul>
+                        </div>
+                        <!-- End Navigation -->
+
+                        <div class="d-inline-block g-hidden-md-down g-pos-rel g-valign-middle g-pl-30 g-pl-0--lg">
+                            <a class="btn u-btn-outline-primary g-font-size-13 text-uppercase g-py-10 g-px-15" href="/tms" target="_blank">CMS</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Promo Block -->
+        <section class="container g-pt-50" id="INTRO">
+            <div class="u-shadow-v24 g-bg-white rounded g-pa-20">
+                <div class="g-bg-cover g-bg-img-hero g-bg-black-opacity-0_1--after g-px-20 g-py-200" style="background-image: url(./assets/img/img1.jpg);">
+                    <div class="text-center g-pos-rel g-z-index-1">
+                        <span class="d-block g-color-white g-font-size-20 text-uppercase g-letter-spacing-5 g-mb-50">Hello! We are Studio AR.</span>
+                        <h1 class="d-inline-block g-brd-around g-brd-2 g-brd-white g-color-white g-font-weight-700 g-font-size-20 g-font-size-50--md text-uppercase g-line-height-1_2 g-letter-spacing-5 g-py-12 g-px-20 g-mb-50">Creative Studio</h1>
+                        <p class="g-color-white g-font-size-20 text-uppercase g-letter-spacing-5 mb-0">Augmented Reality</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Promo Block -->
+
+        <!-- Icon Blocks -->
+        <section class="g-brd-bottom g-brd-gray-light-v4" id="SERVICE">
+            <div class="container g-py-100">
+                <h2 class="g-color-black g-font-weight-600 text-center g-mb-60">STUDIO AR FEATURES
+                </h2>
+
+                <!-- Icon Blocks -->
+                <div class="row no-gutters g-mb-50">
+                    <div class="col-sm-6 col-lg-4">
+                        <!-- Icon Blocks -->
+                        <div class="u-shadow-v21--hover g-brd-around g-brd-gray-light-v4 g-brd-transparent--hover g-bg-white--hover g-transition-0_3 g-cursor-pointer g-px-30 g-pt-30 g-pb-50">
+                            <span class="d-block g-color-gray-dark-v4 g-font-weight-700 text-right mb-3">01</span>
+                            <span class="u-icon-v3 u-shadow-v24 g-bg-white g-color-primary rounded-circle mb-4">
+                                    <i class="icon-media-010 u-line-icon-pro"></i>
+                                </span>
+                            <h3 class="h5 g-color-black g-font-weight-600 mb-3">MEDIA</h3>
+                            <p class="g-color-gray-dark-v4">AR 미디어 지원</p>
+                            <p class="g-color-gray-dark-v4">이미지 기반으로 음악, 연극, 뮤지컬 등 다양한 동영상을 AR(증강현실) 기반 미디어로 지원합니다.</p>
+                        </div>
+                        <!-- End Icon Blocks -->
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <!-- Icon Blocks -->
+                        <div class="u-shadow-v21--hover g-brd-around g-brd-gray-light-v4 g-brd-transparent--hover g-bg-white--hover g-transition-0_3 g-cursor-pointer g-px-30 g-pt-30 g-pb-50    g-ml-minus-1">
+                            <span class="d-block g-color-gray-dark-v4 g-font-weight-700 text-right mb-3">02</span>
+                            <span class="u-icon-v3 u-shadow-v24 g-bg-white g-color-primary rounded-circle mb-4">
+                                    <i class="icon-settings u-line-icon-pro"></i>
+                                </span>
+                            <h3 class="h5 g-color-black g-font-weight-600 mb-3">CMS</h3>
+                            <p class="g-color-gray-dark-v4">고객중심의 CMS 지원</p>
+                            <p class="g-color-gray-dark-v4">고객이 원하는 동영상을 이미지와 함께 등록/변경할 수 있는 CMS 기능을 지원합니다.<br></p>
+                        </div>
+                        <!-- End Icon Blocks -->
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <!-- Icon Blocks -->
+                        <div class="u-shadow-v21--hover g-brd-around g-brd-gray-light-v4 g-brd-transparent--hover g-bg-white--hover g-transition-0_3 g-cursor-pointer g-px-30 g-pt-30 g-pb-50    g-ml-minus-1">
+                            <span class="d-block g-color-gray-dark-v4 g-font-weight-700 text-right mb-3">03</span>
+                            <span class="u-icon-v3 u-shadow-v24 g-bg-white g-color-primary rounded-circle mb-4">
+                                    <i class="icon-credit-card u-line-icon-pro"></i>
+                                </span>
+                            <h3 class="h5 g-color-black g-font-weight-600 mb-3">NFC</h3>
+                            <p class="g-color-gray-dark-v4">저작권보호를 위한 NFC 보안기능 지원</p>
+                            <p class="g-color-gray-dark-v4">고객이 소중한 동영상의 저작권을 보호하기 위한 NFC 기술을 도입한 보안 기능을 지원합니다.</p>
+                        </div>
+                        <!-- End Icon Blocks -->
+                    </div>
+
+                    <!--
+                    <div class="col-sm-6 col-lg-3">
+                        <!-- Icon Blocks --
+                        <div class="u-shadow-v21--hover g-brd-around g-brd-gray-light-v4 g-brd-transparent--hover g-bg-white--hover g-transition-0_3 g-cursor-pointer g-px-30 g-pt-30 g-pb-50    g-ml-minus-1">
+                            <span class="d-block g-color-gray-dark-v4 g-font-weight-700 text-right mb-3">04</span>
+                            <span class="u-icon-v3 u-shadow-v24 g-bg-white g-color-primary rounded-circle mb-4">
+                                    <i class="icon-finance-256 u-line-icon-pro"></i>
+                                </span>
+                            <h3 class="h5 g-color-black g-font-weight-600 mb-3">Code</h3>
+                            <p class="g-color-gray-dark-v4">This is where we sit down, grab a cup of coffee and dial in the details.</p>
+                        </div>
+                        <!-- End Icon Blocks --
+                    </div>
+                    -->
+                </div>
+                <!-- End Icon Blocks -->
+
+                <!--
+                <div class="text-center">
+                    <a class="btn u-btn-primary g-rounded-50 g-pl-25 g-pr-20 g-py-12 g-px-25" href="#">
+                        <span class="g-pos-rel g-top-2">Features</span>
+                        <span class="align-middle u-icon-v3 g-width-20 g-height-20 g-color-black g-bg-white g-font-size-12 rounded-circle g-ml-30">
+                            <i class="fa fa-angle-right"></i>
+                        </span>
+                    </a>
+                </div>
+                -->
+            </div>
+        </section>
+        <!-- End Icon Blocks -->
+
+        <!-- What People Say -->
+        <section class="container g-pt-100 g-pb-40" id="WHY?">
+            <div class="row justify-content-between">
+                <div class="col-lg-5 flex-lg-unordered g-mt-50--lg g-mb-60">
+                    <div class="mb-2">
+                        <div class="d-inline-block g-width-20 g-height-2 g-pos-rel g-top-minus-4 g-bg-primary mr-2"></div>
+                        <span class="g-color-gray-dark-v3 g-font-weight-600 g-font-size-12 text-uppercase">About</span>
+                    </div>
+                    <h2 class="h1 g-color-black g-font-weight-600 g-mb-35">
+                            <span class="g-color-primary">Why</span> Studio AR?</h2>
+                    <p class="g-font-size-17">5G는 기존 네트워크에 비해 빠르고(초고속), 끊김 현상이 덜하며(초저지연), 수 많은 사람들이 동시에 접속 가능한(초연결) 기술로 차세대 기술로 인정받고 있습니다. <br/> 이를 기반으로 Studio AR은 언택트 시대에 맞게 증강현실(AR: Augmented Reality)과 현실 세계를 결합해 새로운 미디어 환경을 만들어가고 있습니다.</p>
+                    
+
+                    <!--
+                    <a class="g-font-weight-600" href="#">
+                        Read More
+                        <span class="align-middle u-icon-v3 g-pos-rel g-top-minus-2 g-width-20 g-height-20 g-color-white g-bg-primary g-font-size-12 rounded-circle ml-3">
+                            <i class="fa fa-angle-right"></i>
+                        </span>
+                    </a>
+                    -->
+                </div>
+
+                <div class="col-lg-6 flex-lg-first g-mb-60">
+                    <div class="masonry-grid row g-mx-minus-5">
+                        <div class="masonry-grid-sizer col-sm-1"></div>
+
+                        <div class="masonry-grid-item col-sm-5 g-px-5 g-mb-10">
+                            <img class="img-fluid w-100" src="./assets/img/about_0.jpg" alt="Image description">
+                        </div>
+
+                        <div class="masonry-grid-item col-sm-7 g-px-5 g-mb-10">
+                            <img class="img-fluid w-100" src="./assets/img/about_1.jpg" alt="Image description">
+                        </div>
+
+                        <div class="masonry-grid-item col-sm-3 g-px-5 g-mb-10">
+                            <img class="img-fluid w-100" src="./assets/img/about_2.jpg" alt="Image description">
+                        </div>
+
+                        <div class="masonry-grid-item col-sm-4 g-px-5 g-mb-10">
+                            <img class="img-fluid w-100" src="./assets/img/about_3.jpg" alt="Image description">
+                        </div>
+
+                        <div class="masonry-grid-item col-sm-8 g-px-5 g-mb-10">
+                            <img class="img-fluid w-100" src="./assets/img/about_4.jpg" alt="Image description">
+                        </div>
+
+                        <div class="masonry-grid-item col-sm-4 g-px-5 g-mb-10">
+                            <img class="img-fluid w-100" src="./assets/img/about_5.jpg" alt="Image description">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End What People Say -->
+
+        <!-- Video Block -->
+        <section class="container">
+            <div class="u-shadow-v24 g-bg-white rounded g-pa-20">
+                <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-bg-cover g-bg-black-opacity-0_6--after" data-options='{direction: "fromtop", animation_duration: 25, direction: "reverse"}'>
+                    <!-- Promo Block - Parallax Video -->
+                    <div class="dzsparallaxer--target" style="width: 100%; height: 200%;" data-forcewidth_ratio="1.77">
+                        <div class="js-bg-video g-abs w-100 h-100" data-hs-bgv-type="vimeo" data-hs-bgv-id="167434033" data-hs-bgv-loop="1"></div>
+                    </div>
+                    <!-- End Promo Block - Parallax Video -->
+
+                    <div class="row text-center g-min-height-450 g-flex-centered g-pos-rel g-z-index-1">
+                        <div class="col-sm-8 px-5 px-sm-0">
+                            <span class="d-block g-color-white-opacity-0_8 g-font-weight-600 text-uppercase mb-2">Intro</span>
+                            <h2 class="h1 g-color-white g-font-weight-600 mb-0">STUDIO AR</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Video Block -->
+
+        <!-- Testimonials -->
+        <section class="container g-py-100 g-pb-70" id="PEOPLE">
+            <div class="row justify-content-between">
+                <div class="col-lg-5 g-mb-30">
+                    <div class="mb-2">
+                        <div class="d-inline-block g-width-20 g-height-2 g-pos-rel g-top-minus-4 g-bg-primary mr-2"></div>
+
+                        <span class="g-color-gray-dark-v3 g-font-weight-600 g-font-size-12 text-uppercase">Testimonials</span>
+                    </div>
+
+                    <h2 class="h1 g-color-black g-font-weight-600 g-mb-35">
+                            <span class="g-color-primary">What</span> People<br>Say about <span class="g-color-primary">Studio AR</span>
+                        </h2>
+
+                    <!-- Carousel -->
+                    <div id="carouselCus1" class="js-carousel js-carousel_single-item-thumbs5__slides g-pb-35" data-infinite="true" data-fade="true" data-animation="linear" data-pagi-classes="u-carousel-indicators-v1 g-bottom-0">
+                        <div class="js-slide">
+
+                            <div class="media">
+                                <img class="d-flex align-self-center g-brd-around g-brd-3 g-brd-white g-width-50 g-height-50 rounded-circle mr-3" src="./assets/img-temp/100x100/img4.png" alt="Image description">
+
+                                <div class="media-body align-self-center">
+                                    <h4 class="g-color-black g-font-weight-600 g-font-size-13 text-uppercase g-mb-0">전○○ 현 피아니스트 겸 작곡가</h4>
+                                    <span class="d-block g-color-gray-dark-v4 g-font-size-12">아티스트의 명함 및 프로파일을 Studio AR과 연계하여 연주하는 영상을 사람들에게 효과적인 Self PR이 가능할 수 있게 되었습니다.
+또한, 공연장의 팜플렛에 아티스트에 대한 리허설 영상, 연주 영상 및 작품설명 영상에 적극적으로 활용하게 되어 좋은 것 같습니다.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="js-slide">
+
+                            <div class="media">
+                                <img class="d-flex align-self-center g-brd-around g-brd-3 g-brd-white g-width-50 g-height-50 rounded-circle mr-3" src="./assets/img-temp/100x100/img5.png" alt="Image description">
+
+                                <div class="media-body align-self-center">
+                                    <h4 class="g-color-black g-font-weight-600 g-font-size-13 text-uppercase g-mb-0">서비스 이용자 한○○</h4>
+                                    <span class="d-block g-color-gray-dark-v4 g-font-size-12">아이돌 팬의 입장에서 평소 좋아하는 연예인의 비하인드 영상 및 인간미 넘치는 영상을 일일이 찾아보지 않고 포토 카드에 담아 개인적으로
+ 소장할 수 있다는 것이 매력적으로 느껴지는 서비스입니다. 영상이 재생되는 다양한 굿즈 상품이 나오면 좋겠습니다. </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="js-slide">
+
+                            <div class="media">
+                                <img class="d-flex align-self-center g-brd-around g-brd-3 g-brd-white g-width-50 g-height-50 rounded-circle mr-3" src="./assets/img-temp/100x100/img7.png" alt="Image description">
+
+                                <div class="media-body align-self-center">
+                                    <h4 class="g-color-black g-font-weight-600 g-font-size-13 text-uppercase g-mb-0">대표이사 김태진</h4>
+                                    <span class="d-block g-color-gray-dark-v4 g-font-size-12">Studio AR은 아티스트, 단체, 기업 및 개인의 소중한 콘텐츠를 보호하고 지원하며, 현실 공간과 가상의 콘텐츠가 지연 없이 실시간으로 매끄럽게 연결되는 기술을 지속해서 개발하여  5G시대에 알맞은 AR 서비스 플랫폼 회사로 성장하도록 끊임없이 노력하겠습니다.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Carousel -->
+                </div>
+
+                <div class="col-lg-6 g-mt-50 g-mb-30">
+                    <!-- Article -->
+                    <article class="u-shadow-v24 u-shadow-v21--hover g-pos-rel g-bg-white g-transition-0_3 g-pa-10 rounded">
+                        <img class="img-fluid w-100" src="./assets/img/people.jpg" alt="Image description">
+                        <div class="g-absolute-centered g-px-50 g-py-200">
+                            <!--
+                            <a class="js-fancybox d-inline-block" href="javascript:;" data-src="//www.youtube.com/embed/BNpiwOkKIJ8?autoplay=1" data-speed="350" data-caption="Single Image">
+                                <span class="u-icon-v3 g-bg-primary g-color-white g-bg-black--hover g-rounded-50x g-cursor-pointer">
+                                    <i class="g-font-size-17 g-pos-rel g-left-2 fa fa-play"></i>
+                                </span>
+                            </a>
+                            -->
+                        </div>
+                    </article>
+                    <!-- End Article -->
+                </div>
+            </div>
+        </section>
+        <!-- End Testimonials -->
+
+        <!-- Pricing Blocks --
+        <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-pos-rel g-overflow-hidden" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}' id="PLAN">
+            <div class="divimage dzsparallaxer--target w-100" style="height: 110%; background-image: url(./assets/img/plan_bg.jpg);"></div>
+
+            <div class="g-pos-abs g-top-0 g-left-0" data-parallaxanimation='[{property: "transform", value:" translate3d(0,px,0)", initial:"-70", mid:"0", final:"70"}]' data-animation="fadeInDown" data-animation-duration="1500">
+                <img class="img-fluid" src="./assets/img/plan_0.png" alt="Image description">
+            </div>
+            <div class="g-pos-abs g-bottom-minus-70 g-right-0" data-parallaxanimation='[{property: "transform", value:" translate3d(0,px,0)", initial:"70", mid:"0", final:"-70"}]' data-animation="fadeInUp" data-animation-duration="1500">
+                <img class="img-fluid" src="./assets/img/plan_1.png" alt="Image description">
+            </div>
+
+            <div class="container g-z-index-1 g-pt-150 g-pb-120">
+                <div class="text-center g-mb-50">
+                    <span class="g-color-black-opacity-0_8 g-font-weight-600 g-font-size-default text-uppercase mb-2">Plan</span>
+                    <h2 class="h1 g-color-black g-font-weight-600">Finding Your Perfect Plan</h2>
+                    <p class="lead g-color-black-opacity-0_8">Now that we've aligned the details, it's time to get things mapped out and organized.</p>
+                </div>
+
+                <div class="row align-items-center">
+                    <div class="col-md-4 g-mb-30">
+                        <!-- Article --
+                        <article class="u-shadow-v21 text-center g-bg-white rounded g-px-20 g-py-80">
+                            <!-- Article Header --
+                            <header class="g-mb-10">
+                                <h4 class="h6 g-color-black g-font-weight-700 text-uppercase mb-0">Starter</h4>
+                                <span class="g-color-black g-font-weight-700 g-font-size-20">$</span>
+                                <span class="g-color-black g-font-weight-600 g-font-size-50">00</span>
+                                <span class="g-color-gray-dark-v4 g-font-size-17">/ Month</span>
+                            </header>
+                            <!-- End Article Header --
+
+                            <!-- Article Content --
+                            <ul class="list-unstyled g-color-gray-dark-v4 g-mb-30">
+                                <li class="my-2"><strong class="g-color-black">Preparing</strong> ...</li>
+                            </ul>
+
+                            <a class="btn u-btn-outline-black g-rounded-50 g-py-12 g-px-30" href="#">Contact Us</a>
+                            <!-- End Article Content --
+                        </article>
+                        <!-- End Article --
+                    </div>
+
+                    <div class="col-md-4 g-mb-30">
+                        <!-- Article --
+                        <article class="u-shadow-v21 text-center g-bg-white rounded g-px-20 g-pt-70 g-pb-100">
+                            <!-- Article Header --
+                            <header class="g-mb-10">
+                                <span class="d-block g-color-primary g-font-size-20 mb-4"><i class="fa fa-star-o"></i></span>
+                                <h4 class="h6 g-color-black g-font-weight-700 text-uppercase mb-0">Professional</h4>
+                                <span class="g-color-black g-font-weight-700 g-font-size-20">$</span>
+                                <span class="g-color-black g-font-weight-600 g-font-size-50">00</span>
+                                <span class="g-color-gray-dark-v4 g-font-size-17">/ Month</span>
+                            </header>
+                            <!-- End Article Header --
+
+                            <!-- Article Content --
+                            <ul class="list-unstyled g-color-gray-dark-v4 g-mb-30">
+                                <li class="my-2"><strong class="g-color-black">Preparing</strong> ...</li>
+                            </ul>
+
+                            <a class="btn u-btn-primary g-rounded-50 g-py-12 g-px-30" href="#">Contact Us</a>
+                            <!-- End Article Content --
+                        </article>
+                        <!-- End Article --
+                    </div>
+
+                    <div class="col-md-4 g-mb-30">
+                        <!-- Article --
+                        <article class="u-shadow-v21 text-center g-bg-white rounded g-px-20 g-py-80">
+                            <!-- Article Header --
+                            <header class="g-mb-10">
+                                <h4 class="h6 g-color-black g-font-weight-700 text-uppercase mb-0">Business</h4>
+                                <span class="g-color-black g-font-weight-700 g-font-size-20">$</span>
+                                <span class="g-color-black g-font-weight-600 g-font-size-50">00</span>
+                                <span class="g-color-gray-dark-v4 g-font-size-17">/ Month</span>
+                            </header>
+                            <!-- End Article Header --
+
+                            <!-- Article Content --
+                            <ul class="list-unstyled g-color-gray-dark-v4 g-mb-30">
+                                <li class="my-2"><strong class="g-color-black">Preparing</strong> ...</li>
+                            </ul>
+
+                            <a class="btn u-btn-outline-black g-rounded-50 g-py-12 g-px-30" href="#">Contact Us</a>
+                            <!-- End Article Content --
+                        </article>
+                        <!-- End Article --
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Pricing Blocks -->
+
+        <!-- Contacts -->
+        <section class="g-brd-bottom g-brd-gray-light-v4" id="CONTACT">
+            <div class="container g-pt-100 g-pb-40">
+                <div class="row justify-content-between no-gutters">
+                    <div class="col-lg-6 g-mb-60">
+                        <div class="mb-5">
+                            <h2 class="h1 g-color-black g-font-weight-600 g-line-height-1_2 g-mb-35">오시는 길<br></span>
+                                </h2>
+                           <p class="lead mb-0">주소: 서울특별시 서초구 방배천로 2길 21, 4층 272호</p>
+            <p class="lead mb-0">대표번호: +82 (0)10 3740 0336</p>
+                        </div>
+
+                        <!-- Google Map -->
+                        <div class="u-shadow-v24 g-bg-white g-pa-10 mb-5">
+                            <div id="map" class="js-g-map embed-responsive embed-responsive-21by9 g-height-300"></div>
+                            <!--
+                            <div id="GMapCustomized-light" class="js-g-map embed-responsive embed-responsive-21by9 g-height-300" data-type="custom" data-lat="40.674" data-lng="-73.946" data-zoom="12" data-title="Agency" data-styles='[["", "", [{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]], ["", "labels", [{"visibility":"on"}]], ["water", "", [{"color":"#bac6cb"}]] ]'
+                            data-pin="true" data-pin-icon="./assets/img/icons/pin/green.png">
+                            </div>
+                            -->
+                        </div>
+                        <!-- End Google Map -->
+
+                        <div class="media">
+                            <h3 class="d-flex g-color-black g-font-weight-600 g-font-size-default mr-4">고객센터안내:</h3>
+                            <div class="media-body">
+                                <p class="g-color-gray-dark-v4 g-font-size-12 mb-1">전화상담 가능시간: 평일 10:00 ~ 17:00 </p>
+                                <p class="g-color-gray-dark-v4 g-font-size-12 mb-1">점심시간: 12:00 ~ 13:30 </p>
+                                <p class="g-color-gray-dark-v4 g-font-size-12 mb-1">공휴일, 토/일요일 휴무</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 d-flex align-items-end g-min-height-600 g-bg-cover g-bg-size-cover g-bg-white-gradient-opacity-v2--after g-mb-60" data-bg-img-src="./assets/img/contact_0.jpg">
+                        <div class="w-100 text-center g-pos-rel g-z-index-1 g-pa-20 g-pa-50--sm mt-auto">
+                           <div class="g-mb-30">
+                                <h2 class="g-color-white g-font-weight-600">Studio AR에 궁금한 점이 있으신가요?</h2>                          
+                            </div>
+
+                            <div class="g-mb-30">
+                                
+                                <span class="g-color-white g-font-size-20">Studio AR 서비스팀에서 내용 확인 후 빠른 시일 내에 연락드리겠습니다. </span>
+                            </div>
+
+                            <h3 class="g-color-white g-font-size-20">아래 내용을 작성해 보내주세요.</h3>
+
+                            <form id="frmQna" action="javascript:void(0);" method="post" enctype="multipart/form-data">
+                            <input type="hidden" id="com_com_mst_no" name="com_com_mst_no" value="1">
+                            <div class="form-group g-mb-20">
+                                <div class="input-group g-brd-primary--focus">
+                                    <input class="form-control form-control-md border-right-0 rounded-0 pr-0" type="email" id="customer_email" name="customer_email" placeholder="이메일">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-equalizer"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group g-mb-20">
+                                <div class="input-group g-brd-primary--focus">
+                                    <input class="form-control form-control-md border-right-0 rounded-0 pr-0" type="text" id="question_title" name="question_title" placeholder="제목">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text rounded-0 g-bg-white g-color-gray-light-v1"><i class="icon-equalizer"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group g-mb-20">
+                                <textarea class="form-control form-control-md g-resize-none rounded-0" rows="3" id="question_content" name="question_content" placeholder="문의내용"></textarea>
+                            </div>
+                            <div class="form-group g-mb-20">
+                                <a href="javascript:qna();" class="btn btn-lg u-btn-primary u-btn-hover-v1-1 g-mr-10 g-mb-15">보내기</a>
+                            </div>
+                            </form>
+
+                            <!--
+                            <div class="input-group">
+                                <input class="form-control g-rounded-left-50 border-0 g-pl-20 g-pr-15" type="email" placeholder="Your email">
+                                <div class="input-group-btn">
+                                    <button class="btn u-btn-primary g-font-size-11 text-uppercase g-rounded-right-50 g-px-20 g-py-15" type="submit">Subscribe</button>
+                                </div>
+                            </div>
+                            -->
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contacts -->
+
+        <!-- Clients -->
+        <!--
+        <div class="container g-py-70">
+            <div class="js-carousel" data-infinite="true" data-autoplay="true" data-slides-show="6" data-responsive='[{
+                             "breakpoint": 1200,
+                             "settings": {
+                                 "slidesToShow": 6
+                             }
+                         }, {
+                             "breakpoint": 992,
+                             "settings": {
+                                 "slidesToShow": 5
+                             }
+                         }, {
+                             "breakpoint": 768,
+                             "settings": {
+                                 "slidesToShow": 4
+                             }
+                         }, {
+                             "breakpoint": 576,
+                             "settings": {
+                                 "slidesToShow": 2
+                             }
+                         }, {
+                             "breakpoint": 446,
+                             "settings": {
+                                 "slidesToShow": 1
+                             }
+                         }]'>
+                <div class="js-slide u-block-hover">
+                    <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="./assets/img-temp/200x100/img1.png" alt="Image description">
+                </div>
+
+                <div class="js-slide u-block-hover">
+                    <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="./assets/img-temp/200x100/img2.png" alt="Image description">
+                </div>
+
+                <div class="js-slide u-block-hover">
+                    <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="./assets/img-temp/200x100/img3.png" alt="Image description">
+                </div>
+
+                <div class="js-slide u-block-hover">
+                    <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="./assets/img-temp/200x100/img4.png" alt="Image description">
+                </div>
+
+                <div class="js-slide u-block-hover">
+                    <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="./assets/img-temp/200x100/img5.png" alt="Image description">
+                </div>
+
+                <div class="js-slide u-block-hover">
+                    <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="./assets/img-temp/200x100/img6.png" alt="Image description">
+                </div>
+
+                <div class="js-slide u-block-hover">
+                    <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="./assets/img-temp/200x100/img7.png" alt="Image description">
+                </div>
+
+                <div class="js-slide u-block-hover">
+                    <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="./assets/img-temp/200x100/img8.png" alt="Image description">
+                </div>
+
+                <div class="js-slide u-block-hover">
+                    <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="./assets/img-temp/200x100/img9.png" alt="Image description">
+                </div>
+            </div>
         </div>
-        <div id="content">
-            <h1 id="section1">섹션 1 제목</h1>
-            <p>섹션 1 내용을 여기에 추가하세요.</p>
-            
-            <h1 id="section2">섹션 2 제목</h1>
-            <p>섹션 2 내용을 여기에 추가하세요.</p>
-            <!-- 원하는 섹션과 내용을 추가하세요. -->
+        -->
+        <!-- End Clients -->
+
+        <!-- Footer -->
+        <div id="contacts-section" class="g-bg-black-opacity-0_9 g-color-white-opacity-0_8 g-py-60">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Content -->
+                    <!--
+                    <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
+                        <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
+                            <h2 class="u-heading-v2__title h6 text-uppercase mb-0">About Us</h2>
+                        </div>
+
+                        <p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
+                    </div>
+                    -->
+                    <!-- End Footer Content -->
+
+                    <!-- Footer Content -->
+                    <div class="col-lg-9 col-md-6 g-mb-40 g-mb-0--lg" id="notice_area">
+                        <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
+                            <h2 class="u-heading-v2__title h6 text-uppercase mb-0">공지사항</h2>
+                        </div>
+
+                        <!--
+                        <article>
+                            <div class="row">
+                                <div class="col-lg-9 col-md-6 g-mb-40 g-mb-0--lg">
+                                    <h3 class="h6 g-mb-2"><a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Incredible template</a></h3>
+                                    <div class="small g-color-white-opacity-0_6">May 8, 2017</div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
+
+
+                                    <a class="btn u-btn-primary" href="#modal3" data-modal-target="#modal3" data-modal-effect="newspaper">Launch Modal
+                                    </a>
+
+                                    <!-- Demo modal window --
+                                    <div id="modal3" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+                                        <button type="button" class="close" onclick="Custombox.modal.close();">
+                                            <i class="hs-icon hs-icon-close"></i>
+                                        </button>
+                                        <h4 class="g-mb-20">Modal title</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                                            specimen book.</p>
+                                        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    </div>
+                                    <!-- End Demo modal window --
+
+                                </div>
+                            </div>
+                        </article>
+
+                        <hr class="g-brd-white-opacity-0_1 g-my-10">
+                        -->
+
+                    </div>
+                    <!-- End Footer Content -->
+
+                    <!-- Footer Content -->
+                    <!--
+                    <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
+                        <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
+                            <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Useful Links</h2>
+                        </div>
+
+                        <nav class="text-uppercase1">
+                            <ul class="list-unstyled g-mt-minus-10 mb-0">
+                                <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+                                    <h4 class="h6 g-pr-20 mb-0">
+                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">About Us</a>
+                                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+                            </h4>
+                                </li>
+                                <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+                                    <h4 class="h6 g-pr-20 mb-0">
+                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Portfolio</a>
+                                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+                            </h4>
+                                </li>
+                                <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+                                    <h4 class="h6 g-pr-20 mb-0">
+                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Our Services</a>
+                                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+                            </h4>
+                                </li>
+                                <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+                                    <h4 class="h6 g-pr-20 mb-0">
+                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Latest Jobs</a>
+                                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+                            </h4>
+                                </li>
+                                <li class="g-pos-rel g-py-10">
+                                    <h4 class="h6 g-pr-20 mb-0">
+                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Contact Us</a>
+                                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+                            </h4>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    -->
+                    <!-- End Footer Content -->
+
+                    <!-- Footer Content -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
+                            <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Our Contacts</h2>
+                        </div>
+
+                        <address class="g-bg-no-repeat g-font-size-12 mb-0" style="background-image: url(./assets/img/maps/map2.png);">
+                        <!-- Location -->
+                        <div class="d-flex g-mb-20">
+                            <div class="g-mr-10">
+                                <span class="u-icon-v3 u-icon-size--xs g-bg-white-opacity-0_1 g-color-white-opacity-0_6">
+                                    <i class="fa fa-map-marker"></i>
+                                </span>
+                            </div>
+                            <p class="mb-0">서울특별시 서초구 방배천로2길 21, 4층 272호<br></p>
+                        </div>
+                        <!-- End Location -->
+
+                        <!-- Phone -->
+                        <div class="d-flex g-mb-20">
+                            <div class="g-mr-10">
+                                <span class="u-icon-v3 u-icon-size--xs g-bg-white-opacity-0_1 g-color-white-opacity-0_6">
+                                    <i class="fa fa-phone"></i>
+                                </span>
+                            </div>
+                            <p class="mb-0">+82 (0) 10-3740-0336</p>
+                        </div>
+                        <!-- End Phone -->
+
+                        <!-- Email and Website -->
+                        <div class="d-flex g-mb-20">
+                            <div class="g-mr-10">
+                                <span class="u-icon-v3 u-icon-size--xs g-bg-white-opacity-0_1 g-color-white-opacity-0_6">
+                                    <i class="fa fa-globe"></i>
+                                </span>
+                            </div>
+                            <p class="mb-0">
+                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="mailto:studioar@studioar.co.kr">studioar@studioar.co.kr</a>
+                                <br>
+                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">www.studioar.co.kr</a>
+                            </p>
+                        </div>
+                        <!-- End Email and Website -->
+                        </address>
+                    </div>
+                    <!-- End Footer Content -->
+                </div>
+            </div>
         </div>
+        <!-- End Footer -->
+
+        <!-- Copyright Footer -->
+        <footer class="g-bg-gray-dark-v1 g-color-white-opacity-0_8 g-py-20">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 text-center text-md-left g-mb-10 g-mb-0--md">
+                        <div class="d-lg-flex">
+                            <small class="d-block g-font-size-default g-mr-10 g-mb-10 g-mb-0--md">2020 &copy; All Rights Reserved.</small>
+                            <ul class="u-list-inline">
+                                <li class="list-inline-item">
+                                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="/_svc/privacy.html">Privacy Policy</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <span>|</span>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Terms of Use</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <span>|</span>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">License</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <span>|</span>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Support</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 align-self-center">
+                        <ul class="list-inline text-center text-md-right mb-0">
+                            <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Skype">
+                                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                                    <i class="fa fa-skype"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Pinterest">
+                                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                                    <i class="fa fa-pinterest"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Twitter">
+                                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Dribbble">
+                                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                                    <i class="fa fa-dribbble"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Copyright Footer -->
+
+        <a class="js-go-to u-go-to-v1" href="#" data-type="fixed" data-position='{"bottom": 15, "right": 15}' data-offset-top="400" data-compensation="#js-header" data-show-effect="zoomIn">
+            <i class="hs-icon hs-icon-arrow-top"></i>
+        </a>
+    </main>
+
+    <div class="u-outer-spaces-helper"></div>
+
+
+    <!-- JS Global Compulsory -->
+    <script src="./assets/vendor/jquery/jquery.min.js"></script>
+    <script src="./assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
+    <script src="./assets/vendor/popper.js/popper.min.js"></script>
+    <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+
+    <!-- JS Implementing Plugins -->
+    <script src="./assets/vendor/appear.js"></script>
+    <script src="./assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    <script src="./assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+    <script src="./assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+    <script src="./assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+    <script src="./assets/vendor/slick-carousel/slick/slick.js"></script>
+    <script src="./assets/vendor/masonry/dist/masonry.pkgd.min.js"></script>
+    <script src="./assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/vendor/hs-bg-video/hs-bg-video.js"></script>
+    <script src="./assets/vendor/hs-bg-video/vendor/player.min.js"></script>
+    <script src="./assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+    <script src="./assets/vendor/gmaps/gmaps.min.js"></script>
+
+    <!-- JS Unify -->
+    <script src="./assets/js/hs.core.js"></script>
+    <script src="./assets/js/components/hs.header.js"></script>
+    <script src="./assets/js/helpers/hs.hamburgers.js"></script>
+    <script src="./assets/js/components/hs.tabs.js"></script>
+    <script src="./assets/js/components/hs.carousel.js"></script>
+    <script src="./assets/js/helpers/hs.bg-video.js"></script>
+    <script src="./assets/js/components/hs.popup.js"></script>
+    <script src="./assets/js/components/gmap/hs.map.js"></script>
+    <script src="./assets/js/components/hs.onscroll-animation.js"></script>
+    <script src="./assets/js/components/hs.go-to.js"></script>
+
+    <!-- JS Customization -->
+    <script src="./assets/js/custom.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+        // initialization of google map
+            function initMap() {
+                $.HSCore.components.HSGMap.init('.js-g-map');
+            }
+
+            $(document).on('ready', function () {
+                // initialization of carousel
+                $.HSCore.components.HSCarousel.init('.js-carousel');
+
+                // initialization of tabs
+                $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+                // initialization of scroll animation
+                $.HSCore.components.HSOnScrollAnimation.init('[data-animation]');
+
+                // initialization of popups
+                $.HSCore.components.HSPopup.init('.js-fancybox');
+
+                // initialization of video on background
+                $.HSCore.helpers.HSBgVideo.init('.js-bg-video');
+
+                // initialization of go to
+                $.HSCore.components.HSGoTo.init('.js-go-to');
+            });
+
+            $(window).on('load', function () {
+                // initialization of header
+                $.HSCore.components.HSHeader.init($('#js-header'));
+                $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+                // initialization of HSMegaMenu component
+                $('.js-mega-menu').HSMegaMenu({
+                    event: 'hover',
+                    pageContainer: $('.container'),
+                    breakpoint: 991
+                });
+
+                // initialization of masonry
+                $('.masonry-grid').imagesLoaded().then(function () {
+                    $('.masonry-grid').masonry({
+                        columnWidth: '.masonry-grid-sizer',
+                        itemSelector: '.masonry-grid-item',
+                        percentPosition: true
+                    });
+                });
+            });
+
+            $(window).on('resize', function () {
+                setTimeout(function () {
+                    $.HSCore.components.HSTabs.init('[role="tablist"]');
+                }, 200);
+            });
+    </script>
+
+    <!--<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyAtt1z99GtrHZt_IcnK-wryNsQ30A112J0&callback=initMap" async defer></script>-->
+
+    <div id="resolutionCaution" class="text-left g-max-width-600 g-bg-white g-pa-20" style="display: none;">
+        <button type="button" class="close" onclick="Custombox.modal.close();">
+            <i class="hs-icon hs-icon-close"></i>
+        </button>
+        <h4 class="g-mb-20">Screen resolution less than 1400px</h4>
     </div>
+
+    <div id="copyModal" class="text-left modal-demo g-bg-white g-color-black g-pa-20" style="display: none;"></div>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="./assets/vendor/chosen/chosen.css">
+    <link rel="stylesheet" href="./assets/vendor/prism/themes/prism.css">
+    <link rel="stylesheet" href="./assets/vendor/custombox/custombox.min.css">
+    <link rel="stylesheet" href="./assets/css/unify-globals.css">
+    <!--<link rel="stylesheet" href="./assets/style-switcher/vendor/spectrum/spectrum.css">-->
+    <!--<link rel="stylesheet" href="./assets/style-switcher/vendor/spectrum/themes/sp-dark.css">-->
+    <!--<link rel="stylesheet" href="./assets/style-switcher/style-switcher.css">-->
+    <!-- End CSS -->
+
+    <!-- Scripts -->
+    <script src="./assets/vendor/chosen/chosen.jquery.js"></script>
+    <script src="./assets/vendor/image-select/src/ImageSelect.jquery.js"></script>
+    <script src="./assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="./assets/vendor/custombox/custombox.min.js"></script>
+    <script src="./assets/vendor/clipboard/dist/clipboard.min.js"></script>
+
+    <!-- Prism -->
+    <script src="./assets/vendor/prism/prism.js"></script>
+    <script src="./assets/vendor/prism/components/prism-markup.min.js"></script>
+    <script src="./assets/vendor/prism/components/prism-css.min.js"></script>
+    <script src="./assets/vendor/prism/components/prism-clike.min.js"></script>
+    <script src="./assets/vendor/prism/components/prism-javascript.min.js"></script>
+    <script src="./assets/vendor/prism/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script src="./assets/vendor/prism/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    <!-- End Prism -->
+
+    <script src="./assets/js/components/hs.scrollbar.js"></script>
+    <script src="./assets/js/components/hs.select.js"></script>
+    <script src="./assets/js/components/hs.modal-window.js"></script>
+    <script src="./assets/js/components/hs.markup-copy.js"></script>
+
+    <!--<script src="./assets/style-switcher/vendor/cookiejs/jquery.cookie.js"></script>-->
+    <!--<script src="./assets/style-switcher/vendor/spectrum/spectrum.js"></script>-->
+    <!--<script src="./assets/style-switcher/style-switcher.js"></script>-->
+    <!-- End Scripts -->
+    <!-- End Style Switcher -->
+
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8962c31609aeb29ee657446793305b44&libraries=services"></script>
+    <script>
+        var mapContainer = document.getElementById('map');
+        var mapOption  = {
+            center: new kakao.maps.LatLng(33.450701, 126.570667),
+            level: 3
+        };
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+
+        // 주소-좌표 변환 객체를 생성합니다
+        var geocoder = new kakao.maps.services.Geocoder();
+
+        // 주소로 좌표를 검색합니다
+        geocoder.addressSearch('서울특별시 서초구 방배천로2길 21', function(result, status) {
+            // 정상적으로 검색이 완료됐으면
+            if (status === kakao.maps.services.Status.OK) {
+                var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+                // 결과값으로 받은 위치를 마커로 표시합니다
+                var marker = new kakao.maps.Marker({
+                    map: map,
+                    position: coords
+                });
+                // 인포윈도우로 장소에 대한 설명을 표시합니다
+                var infowindow = new kakao.maps.InfoWindow({
+                    content: '<div style="width:150px;text-align:center;padding:6px 0;">Studio AR</div>'
+                });
+                infowindow.open(map, marker);
+                // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+                map.setCenter(coords);
+            }
+        });
+
+        notice();
+
+        // initialization of popups
+        $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+
+        function qna() {
+            if ($('#customer_email').val() == '') {
+                alert('고객님의 이메일을 입력해주세요!');
+                $('#customer_email').focus();
+            } else if ($('#question_title').val() == '') {
+                alert('문의제목을 입력해주세요!');
+                $('#question_title').focus();
+            } else if ($('#question_content').val() == '') {
+                alert('문의내용을 입력해주세요!');
+                $('#question_content').focus();
+            } else {
+
+                var reqData = $('#frmQna').serialize();
+                //alert(reqData);
+                $.ajax({
+                    type: "post",
+                    url: "http://studioar.co.kr/tms/v1/app/qna-regist",
+                    data: reqData,
+                    beforeSend: function (xhr) {
+                        xhr.setRequestHeader('Apikey', '');
+                    },
+                })
+                .done(function(status, nativeStatusText, response, headers) {
+                    if (response.status == 200) {
+                        alert('문의내용이 정상적으로 등록되었습니다.');
+                    } else {
+                        console.log(response);
+                    }
+                })
+                .fail(function(xhr, status, errorThrown) { // HTTP 요청이 실패하면 오류와 상태에 관한 정보가 fail() 메소드로 전달됨.
+                    alert("처리에 실패하였습니다.\ncode:"+xhr.status+"\n"+"error:"+errorThrown);
+                });
+
+                $("#frmQna")[0].reset();
+            }
+        }
+
+        function notice() {
+            $.ajax({
+                type: "get",
+                async: false,
+                url: "http://studioar.co.kr/tms/v1/app/notice-list/" + $('#com_com_mst_no').val(),
+                data: '',
+                beforeSend: function (xhr) {
+                    xhr.setRequestHeader('Apikey', '');
+                },
+            })
+            .done(function(status, nativeStatusText, response, headers) {
+                if (response.status == 200) {
+                    console.log(response.responseJSON.dataset.length);
+                    for (var i=0; i<response.responseJSON.dataset.length; i++) {
+                        $('#notice_area').append('' + '<article>\n' +
+                            '                            <div class="row">\n' +
+                            '                                <div class="col-lg-9 col-md-6 g-mb-40 g-mb-0--lg">\n' +
+                            '                                    <h3 class="h6 g-mb-2"><a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">' + response.responseJSON.dataset[i].notice_title + '</a></h3>\n' +
+                            '                                    <div class="small g-color-white-opacity-0_6">' + response.responseJSON.dataset[i].reg_datetime + '</div>\n' +
+                            '                                </div>\n' +
+                            '                                <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">\n' +
+                            '\n' +
+                            '                                    <a class="btn u-btn-primary" href="#modal' + response.responseJSON.dataset[i].opr_notice_mst_no + '" data-modal-target="#modal' + response.responseJSON.dataset[i].opr_notice_mst_no + '" data-modal-effect="newspaper">Detail..\n' +
+                            '                                    </a>\n' +
+                            '\n' +
+                            '                                    <!-- Demo modal window -->\n' +
+                            '                                    <div id="modal' + response.responseJSON.dataset[i].opr_notice_mst_no + '" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">\n' +
+                            '                                        <button type="button" class="close" onclick="Custombox.modal.close();">\n' +
+                            '                                            <i class="hs-icon hs-icon-close"></i>\n' +
+                            '                                        </button>\n' +
+                            '                                        <h4 class="g-mb-20">' + response.responseJSON.dataset[i].notice_title + '</h4>\n' +
+                            '                                        <p>' + response.responseJSON.dataset[i].notice_content + '</p>\n' +
+                            '                                    </div>\n' +
+                            '                                    <!-- End Demo modal window -->\n' +
+                            '\n' +
+                            '                                </div>\n' +
+                            '                            </div>\n' +
+                            '                        </article>' +
+                            '<hr class="g-brd-white-opacity-0_1 g-my-10">'
+                        );
+                    }
+
+                } else {
+                    console.log(response);
+                }
+            })
+            .fail(function(xhr, status, errorThrown) { // HTTP 요청이 실패하면 오류와 상태에 관한 정보가 fail() 메소드로 전달됨.
+                alert("처리에 실패하였습니다.\ncode:"+xhr.status+"\n"+"error:"+errorThrown);
+            });
+        }
+    </script>
+
 </body>
+
 </html>
